@@ -1,6 +1,8 @@
 # Sudoku Solver
 A web-based application to solve Sudoku puzzles. Users can input their Sudoku puzzle, and the solver will fill in the grid with a valid solution using backtracking algorithm.
 
+![](solver.gif)
+
 ## Features
 - **Interactive Grid:** Users can input numbers into a 9x9 Sudoku grid.
 - **Validation:** Checks for input validity and highlights incorrect entries.
