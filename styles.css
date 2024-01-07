@@ -1,0 +1,50 @@
+#sudoku-grid {
+	display: inline-grid;
+	grid-template-columns: repeat(9, 50px);
+	grid-template-rows: repeat(9, 50px);
+	gap: 0px;
+	border: 2px solid #04616e;
+}
+
+#sudoku-grid input {
+	border-right: 1px solid #04616e;
+	border-bottom: 1px solid #04616e;
+	text-align: center;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+	caret-color: transparent;
+	background-color: #89c5c9;
+}
+
+#sudoku-grid input:nth-child(3n) {
+	border-right: 2px solid #04616e;
+}
+
+#sudoku-grid input:nth-last-child(-n+3) {
+	border-bottom: none;
+}
+
+#sudoku-grid input:nth-child(n+19):nth-child(-n+27), /* 3rd row */
+#sudoku-grid input:nth-child(n+46):nth-child(-n+54), /* 6th row */
+#sudoku-grid input:nth-child(n+73):nth-child(-n+81) { /* 9th row */
+  border-bottom: 2px solid #04616e;
+}
+
+input[type="text"] {
+	font-size:24px;
+}
+
+.highlighted {
+	background-color: #caebed;
+}
+
+#solve-button {
+	width: 70px;
+	height: 40px;
+	margin: 20px;
+}
